@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <div class="container">
+        <h1 align="center">Formulario CVV</h1>
+        <form action="/action_page.php" >
+        <fieldset>
+         <legend>DATOS PERSONALES</legend>
+          <div class="row">
+            <div class="col-25">
+              <label for="fname">Nombre</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="fname" name="firstname" placeholder="Tu nombre/s">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="lname">Apellidos</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="lname" name="lastname" placeholder="Tus apellidos">
+            </div>
+        </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="country">Pais de nacimiento</label>
+            </div>
+            <div class="col-75">
+              <select id="country" name="country">
+                <option value="australia">M&eacute;xico</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="fecha"> Fecha de nacimiento </label>
+            </div>
+            <div class="col-75">
+              <input type="date" name="fecha" value="">
+          </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="correo">Correo</label>
+            </div>
+            <div class="col-75">
+              <input type="email" id="correo" name="correo" placeholder="correo@dominio.com" validate="true">
+            </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="sexo">Sexo:</label>         
+          </div>
+          <div class="col-75">
+            <radiogroup>
+              <input type="radio" id="sexo" name="sexo" value="hombre"> Hombre<br>
+              <input type="radio" id="sexo" name="sexo" value="mujer"> Mujer<br>
+              <input type="radio" id="sexo" name="sexo" value="otro"> Otro<br>
+          </radiogroup>
+          </div>
+      </div>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>DATOS ESCOLARES</legend>
+            <div class="row">
+                <div class="col-25">
+                    <label for="titulo">Nombre de su carrera</label>
+                  </div>
+                  <div class="col-75">
+                    <input type="text" id="titulo" name="carrera" placeholder="Carrera Profesional">
+                  </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="estudios">Ultimo grado de estudios</label>
+                  </div>
+                  <div class="col-75">
+                    <radiogroup>
+                      <input type="radio" id="estudios" name="estudios" value="Licenciatura">Licenciatura<br>
+                      <input type="radio" id="estudios" name="estudios" value="Maestr&iacute;a"> Maestr&iacute;a<br>
+                      <input type="radio" id="estudios" name="estudios" value="Doctorado"> Doctorado<br>
+                    </radiogroup>
+                  </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="ulte">Nombre del ultimo grado de estudios</label>
+                  </div>
+                  <div class="col-75">
+                    <input type="text" id="ulte" name="ulte" placeholder="Carrera">
+                  </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="escuela">Instituto de Procedencia</label>
+                  </div>
+                  <div class="col-75" id="escu">
+                    <div id="nesc">
+                      <input type="text" id="Escuela" name="escuela" placeholder="Instituto Profesional">
+                    </div>
+                    <pre>   </pre>
+                    <div id="urles">
+                      <input type="text" id="urle" name="urle" placeholder="URL">
+                    </div>
+                    <pre>   </pre>
+                    <div id="direc">
+                      <input type="text" id="dirrecion" name="direccion" placeholder="Direcion de la escuela">
+                    </div>
+                  </div>
+            </div>
+
+            <div class="row">
+            <div class="col-25">
+              <label for="idiomas"> Idiomas que domina: </label>
+            </div>
+            <div class="col-75">
+              <div id="idiomas" name="idiomas">
+                <input type="checkbox" value="español" checked>Español <br>
+                <input type="checkbox" value="ingles">Ingles <br>
+                <input type="checkbox" value="frances">Frances <br>
+                <input type="checkbox" value="aleman">Aleman <br>
+            </div>
+            </div>
+            </div>
+        </fieldset>
+
+
+        <br>
+        <fieldset>
+        <legend>EXPERIENCIA LABORAL</legend>
+        <div class="row">
+          <div class="col-25">
+            <label for="adp">Area de desarrollo profesional</label>
+          </div>
+          <div class="col-75">
+            <textarea id="adp" name="adp" placeholder="Que areas puedes desempeñar" style="height:200px"></textarea>
+          </div>
+        </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="exp">Experiencia Laboral</label>
+            </div>
+            <div class="col-75">
+              <textarea id="exp" name="exp" placeholder="Si no tienes experiencia, escribe los proyectos que crees que vale la pena destacar" style="height:200px"></textarea>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="ltr">Lugares de trabajo</label>
+            </div>
+            <div class="col-75">
+              <textarea id="ltr" name="ltr" placeholder="¿en qué lugares trabajaste?" style="height:200px"></textarea>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>ENVIO DE ARCHIVOS</legend>
+          
+          <div class="row">
+            <div class="col-25">
+              <label for="foto">Foto Personal: </label>
+            </div>
+            <div class="col-75">
+              <div name="proyectos">
+                <p>Sube una foto tuya (m&aacute;x. 5MB cada uno): </p>
+                <input type="file" id="foto" name="foto" accept="image/*" multiple> <br>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="video">Video de presentaci&oacute;n</label>
+            </div>
+            <div class="col-75">
+              <div name="proyectos">
+                <p>Sube 1 video hablando de ti (m&aacute;x. 5MB cada uno): </p>
+                <input type="file" id="video" name="video" accept="video/*" multiple> <br>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="proyectos">Proyectos previos</label>
+            </div>
+            <div class="col-75">
+              <div name="proyectos">
+                <p>Sube hasta 3 proyectos en formato PDF (máx. 5MB cada uno):</p>
+                <input type="file" id="proyecto1" name="proyecto1" accept="application/pdf" multiple> <br>
+                <input type="file" id="proyecto2" name="proyecto2" accept="application/pdf" multiple><br>
+                <input type="file" id="proyecto3" name="proyecto3" accept="application/pdf" multiple><br>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+        <br>
+        <div class="row" align="center">
+          <input type="submit" value="Aceptar">
+        </div>
+        </form>
+      </div>
+</body>
+</html>

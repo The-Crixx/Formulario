@@ -1,0 +1,145 @@
+body {
+    background-color: hsl(197, 73%, 87%);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: justify;
+}
+
+h1 {
+    color: #000000;
+    font-size: 250%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h2 {
+    background-color: hsl(223, 100%, 76%);
+    color: hsl(210, 6%, 6%);
+    font-size: 200%;
+    text-decoration: underline;
+}
+
+h3 {
+    background-color: hsl(223, 100%, 76%);
+    color: hsl(180, 20%, 1%);
+    font-size: 130%;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+p {
+    text-align: justify;
+}
+
+em {
+    color: hsl(247, 100%, 66%);
+    font-style: normal;
+    font-weight: bold;
+}
+
+strong {
+    color: hsl(253, 100%, 27%);
+    font-weight: italic;
+}
+
+address {
+    background-color: rgb(68, 221, 255);
+    font-weight: bold;
+    text-align: right;
+}
+
+
+* {
+    box-sizing: border-box; /*define cómo se calculan el ancho y la altura de un elemento*/
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid black;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+input[type=email]{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid black;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+input[type=date]{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid black;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: hsl(198, 94%, 74%);
+    color: rgb(12, 12, 12);
+    padding: 12px 20px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    cursor: pointer;
+    float: center;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+fieldset{
+    border: 2px solid #000000;
+}
+
+legend{
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+#escu{
+    position: relative;
+    display: flex;
+}
+
+#nesc, #urles, #direc{
+    width: 25%;
+    position: static;
+}
+
